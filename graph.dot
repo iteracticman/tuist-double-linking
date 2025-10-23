@@ -1,0 +1,19 @@
+digraph {
+  Alamofire [fillcolor=coral1 shape=cylinder style=filled]
+  CFNetwork [fillcolor=violet shape=rectangle style=filled]
+  Core [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  CoreService [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  Feature [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  FeatureService [fillcolor=darkgoldenrod1 shape=cylinder style=filled]
+  HTTPTypes [fillcolor=coral1 shape=cylinder style=filled]
+  HTTPTypesFoundation [fillcolor=coral1 shape=cylinder style=filled]
+  TuistPackageLinkingTest [fillcolor=deepskyblue penwidth="1.5" shape=box3d style=filled]
+  Alamofire -> CFNetwork
+  Core -> HTTPTypesFoundation
+  Core -> Alamofire
+  CoreService -> Core
+  Feature -> FeatureService
+  FeatureService -> CoreService
+  HTTPTypesFoundation -> HTTPTypes
+  TuistPackageLinkingTest -> Feature
+}
